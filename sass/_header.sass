@@ -36,10 +36,11 @@
   position: relative
   &__background
     width: 100%
+    min-height: 200px
     //background-image: url('../img/header_photo.png');
-    //background-size: contain
+    background-size: contain
     //background-repeat: no-repeat; 
-    //background-size: 100% auto;
+    background-size: 100% auto;
     //height: 575px
   &__title
     color: #fff
@@ -98,7 +99,7 @@
       top: 30px
       right: 50%
       transform: translateX(-51%)
-      
+      overflow: hidden
       
   &__corner-item-2  
     &::after
@@ -112,6 +113,7 @@
       top: 30px
       left: 50%
       transform: translateX(-49%)
+      overflow: hidden
       
 @media (max-width: 520px) 
   .header-navbar
@@ -169,8 +171,8 @@
         display: inline-block
         top: 20px
         right: 50%
-        transform: translateX(-51%)
-      
+        transform: translateX(-49%)
+        overflow: hidden
       
     &__corner-item-2  
       &::after
@@ -183,7 +185,10 @@
         display: inline-block
         top: 20px
         left: 50%
-        transform: translateX(-49%)
+        transform: translateX(-48%)
+        overflow: hidden
+
+
 @media (min-width: 521px) and (max-width: 767px)
   .header-navbar
     width: 90%
@@ -285,6 +290,8 @@
         display: inline-block
         margin-bottom: 3px
         margin-left: 20px
+
+    
 
 @media (min-width: 989px) and (max-width: 1500px) 
   .header-navbar
