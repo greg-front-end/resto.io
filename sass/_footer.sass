@@ -1,0 +1,59 @@
+.footer 
+  background-color: #3b3b3b
+  color: #f2f2f2
+  padding: 120px
+  line-height: 1.5
+  &__adress 
+    display: flex
+    flex-direction: column
+    align-items: center
+
+
+  &__text 
+    +standart
+    font-weight: 500
+  &__text-light
+    +lightitalic 
+    font-size: 12px 
+
+  &__phone 
+    color: #f2f2f2
+    +bold
+    font-weight: 600
+
+  &__rights 
+    display: flex
+    flex-direction: column
+
+  &__rights-text 
+    +standart
+    +lightitalic
+    font-size: 12px
+  &__logo
+    margin-bottom: 10px
+    color: #fff
+
+.footer-elements 
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.footer-links 
+  display: flex
+  flex-direction: column
+  &__link 
+    color: #f2f2f2
+    +standart
+
+@media ( max-width:798px )
+  .footer
+    line-height: 2
+    padding: 50px
+    text-align: center
+    &__logo
+      display: none
+  .footer-elements 
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
