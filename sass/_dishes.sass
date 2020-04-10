@@ -1,0 +1,89 @@
+.dishes 
+  width: 100%
+  &__title
+
+  &__items 
+
+    display: flex
+    justify-content: space-between
+  &__item 
+    padding: 0 10px 0 10px
+    display: flex
+    flex-direction: column
+  &__text  
+    display: flex
+    justify-content: space-between
+    line-height: 2
+    margin-top: 30px
+  &__ingredient 
+    display: inline-block
+  &__price 
+    display: inline-block
+    text-align: right
+
+
+.dishes-stars 
+  display: flex
+  &__item 
+    margin-bottom: 15px
+@media ( max-width: 521px )
+  .dishes
+    &__items 
+      margin: 0 auto
+      width: 100%
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      align-items: center
+    &__item
+      padding: 0 5px 0 5px
+    &__text
+      margin-top: 10px
+@media ( min-width: 522px ) and ( max-width: 768px ) 
+
+  .dishes
+    &__items 
+      margin: 0 auto
+      padding: 0 10px 0 10px
+      width: 100%
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+      align-items: center
+@media ( min-width: 769px )  and ( max-width: 968px ) 
+
+  .dishes 
+    &__items 
+      margin: 0 auto
+      padding: 0 10px 0 10px
+      width: 100%
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: center
+@media ( min-width: 969px )  and ( max-width: 1199px )
+  .dishes 
+
+    &__title
+
+    &__items 
+      margin: 0 auto
+      padding: 0 10px 0 10px
+      width: 90%
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: center
+      
+    &__item 
+
+    &__text  
+      display: flex
+      justify-content: space-between
+      line-height: 2
+      margin-top: 30px
+    &__ingredient 
+      display: inline-block
+    &__price 
+      display: inline-block
+      text-align: right
